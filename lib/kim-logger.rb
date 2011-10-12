@@ -1,8 +1,10 @@
+$:.push File.join( File.dirname(__FILE__), "kim-logger" )
+
 require "kim"
 require "logger"
 require "net/smtp"
-require "./lib/kim-logger/version"
-require "./lib/kim-logger/email_device"
+require "version"
+require "email_device"
 
 Logger.class_exec do
   # Redefine initialization to have the same behavior 
